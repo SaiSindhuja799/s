@@ -2,7 +2,7 @@
 
 int main() {
 	// your code goes here
-	int n,i;
+	int n,i,flag=0;
 	scanf("%d",&n);
 	int a[n];
 	for(i=0;i<n;i++)
@@ -12,7 +12,11 @@ int main() {
 	for(i=0;i<n;i++)
 	{
 	if(a[i]==i+1)
-	printf("%d ",a[i]);
+	{printf("%d ",a[i]);
+	flag=1;
 	}
+	}
+	if(flag==0)
+	printf("-1");
 	return 0;
 }
